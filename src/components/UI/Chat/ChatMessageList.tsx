@@ -5,7 +5,7 @@ import UserAvatar from "./UserAvatar";
 
 import classes from "./ChatMessageList.module.css";
 
-interface IMsg {
+export interface IMsg {
 	id: number;
 	sender: string;
 	senderAvatar: string;
@@ -69,7 +69,7 @@ const ChatMessageList: FC<{ loggedUser: string }> = (props) => {
 			{CHAT_HISTORY.map((msg, index) => {
 
 				handleDisplayAvatar(CHAT_HISTORY, index);
-				
+
 				return (
 					<div key={msg.id} className={classes[handleDialogueSide(msg)]}>
 						<div className={classes.chatMsgWrapper}>
