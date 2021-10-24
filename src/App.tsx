@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+
+import Layout from "./components/Layout";
 
 function App() {
-  return (
-    <div className="App">
+	const loggedUser = "Thomas Short";
 
-    </div>
-  );
+	return (
+		<div className="App">
+			<Layout loggedUser={loggedUser} />
+		</div>
+	);
 }
 
 export default App;

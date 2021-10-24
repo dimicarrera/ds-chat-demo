@@ -1,0 +1,23 @@
+.container {
+	position: relative;
+	margin-top: 1rem;
+}
+
+.msgInput {
+	width: 100%;
+	border: 1px solid #eee0e0;
+	border-radius: 1rem;
+	padding: 0.7rem;
+}
+
+.sendBtn {
+	position: absolute;
+	right: 0;
+	bottom: 0.25rem;
+	background: #d5d3d3;
+	border: none;
+  border-radius: 1.5rem;
+	cursor: pointer;
+	height: 2rem;
+	width: 2rem;
+}

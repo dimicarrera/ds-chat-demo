@@ -1,0 +1,23 @@
+.main {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.topbar {
+	padding: 1rem;
+	border-bottom: 1px solid #eee0e0;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex: 1;
+	align-items: stretch;
+	padding: 2rem 2rem 1rem;
+}
+
+.chatArea {
+	flex: 1;
+	align-self: flex-end;
+}

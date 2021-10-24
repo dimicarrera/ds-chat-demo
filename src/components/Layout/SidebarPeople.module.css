@@ -1,0 +1,13 @@
+.active {
+  background-color: #d5d3d3;
+}
+
+.heading,
+.contact {
+  padding: 1rem 2rem;
+}
+
+.contact {
+  margin: 0;
+  cursor: pointer;
+}

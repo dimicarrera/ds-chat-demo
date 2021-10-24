@@ -1,0 +1,74 @@
+.chatMsgList {
+	display: flex;
+	flex-direction: column;
+}
+
+.chatMsgWrapper {
+	display: flex;
+	margin-bottom: 0.5rem;
+}
+
+.chatMsg {
+	display: block;
+	width: fit-content;
+	padding: 0.25rem 1rem;
+	border-radius: 1rem;
+	font-family: "Zen Kurenaido", sans-serif;
+	font-size: 1rem;
+	color: #eee0e0;
+}
+
+.chatMsg:only-child {
+	margin-left: 3rem;
+}
+
+.left .chatMsg {
+	background-color: #d5d3d3;
+	color: #000;
+}
+
+.right {
+	align-self: flex-end;
+}
+
+.right .chatMsgWrapper {
+	flex-direction: row-reverse;
+}
+
+.right .chatMsg {
+	background-color: #166ad1;
+}
+
+.right .userAvatar {
+	margin-left: 1rem;
+	margin-right: 0;
+}
+
+.userAvatar {
+	position: relative;
+	width: 2rem;
+	height: 2rem;
+	margin-right: 1rem;
+	border-radius: 1.5rem;
+	text-align: center;
+	background-color: #0f4007;
+	cursor: pointer;
+}
+
+.userAvatar span {
+	font-family: "Zen Kurenaido", sans-serif;
+	font-size: 0.9rem;
+	color: #eee0e0;
+	vertical-align: middle;
+	line-height: 1;
+}
+
+.userAvatar::after {
+	position: absolute;
+	bottom: 0;
+	content: "";
+	width: 0.6rem;
+	height: 0.6rem;
+	border-radius: 0.6rem;
+	background-color: #17af36;
+}
